@@ -1,0 +1,117 @@
+body {
+    font-family: Georgia, Cambria, "Times New Roman", serif;
+    font-size: 100%;
+    background-color: #98dafc;
+}
+
+header, footer {
+    color: white;
+    background-color: #312c32;
+    margin: 0 4em 0.5em 4em;
+}
+
+h1 {
+    font-size: 1.5em;
+}
+h2 {
+    font-size: 0.75em;
+}
+h3 {
+    font-size: 1.125em;
+}
+
+nav {
+    font-size: 1.125em;
+}
+
+a {
+    color: #98dafc;
+    font-weight: bold;
+}
+a:visited {
+    color: #daad86;
+}
+a:hover {
+    background-color: #FFFFCC;
+}
+
+header {
+    padding: 0.25em 0;
+}
+header ul {
+    list-style-type: none;
+}
+header ul li {
+    display: inline;
+    margin: 0 0 0 0.5em;
+}
+
+.container {
+    background-color: white;
+    margin: 0 4em 0.5em 4em;
+    padding: 0.5em;
+}
+
+.description {
+    margin: 0 0 2em;
+}
+.description h3 {
+    border-bottom: black 1px solid;
+}
+.description p {
+    margin: 0.4em 0;
+}
+
+.byline {
+    color: darkgray;
+    font-style: italic;
+}
+
+.large-image {
+    display: block;
+    border: black 1px solid;
+    width: 98%;
+    padding: 0.25em;
+    margin: auto;
+}
+
+.share {
+    background-image: url("../images/gray-gradient.png");
+    background-repeat: repeat-x;
+    height: 50px;
+    border-radius: 0.25em;
+    margin: 0.5em 0 2em;
+}
+.share__content {
+    display: flex;
+    align-items: center;
+    height: 100%;
+
+    margin: 0 0.4em;
+}
+.share__content img {
+    margin: 0 0.1em;
+}
+
+.related-photos h3 {
+    border-bottom: black 1px solid;
+}
+.related-photos__images {
+    margin: 0.5em 0 2em;
+}
+
+.review {
+    border-bottom: black 1px dotted;
+    margin: 1em 0;
+}
+.reviews h3, .review__divide {
+    border-bottom: black 1px solid;
+}
+
+footer {
+    padding: 0.5em;
+}
+
+.footer-links, .footer-copyright {
+    margin-bottom: 0.75em;
+}
