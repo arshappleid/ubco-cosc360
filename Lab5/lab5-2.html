@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Lab 5-2</title>
+    <link rel="stylesheet" href="css/lab5-2.css">
+</head>
+<body>
+
+<table>
+    <caption>February 2021</caption>
+    <thead>
+    <tr>
+        <th scope="col"><strong>S</strong></th>
+        <th scope="col"><strong>M</strong></th>
+        <th scope="col"><strong>T</strong></th>
+        <th scope="col"><strong>W</strong></th>
+        <th scope="col"><strong>T</strong></th>
+        <th scope="col"><strong>F</strong></th>
+        <th scope="col"><strong>S</strong></th>
+    </tr>
+    </thead>
+    <tbody>
+    <tr>
+        <td><a href="#"></a></td>
+        <td>1</td>
+        <td>2</td>
+        <td>3</td>
+        <td id="today">4</td>
+        <td>5</td>
+        <td>6</td>
+    </tr>
+    <tr>
+        <td><a href="#">7</a></td>
+        <td>8</td>
+        <td>9</td>
+        <td>10</td>
+        <td>11</td>
+        <td>12</td>
+        <td>13</td>
+    </tr>
+    <tr>
+        <td><a href="#">14</a></td>
+        <td>15</td>
+        <td>16</td>
+        <td>17</td>
+        <td>18</td>
+        <td>19</td>
+        <td>20</td>
+    </tr>
+    <tr>
+        <td><a href="#">21</a></td>
+        <td>22</td>
+        <td>23</td>
+        <td>24</td>
+        <td>25</td>
+        <td>26</td>
+        <td>27</td>
+    </tr>
+    <tr>
+        <td><a href="#">28</a></td>
+        <td colspan="6"></td>
+    </tr>
+    </tbody>
+    <tfoot>
+    <tr>
+        <td id="prev" colspan="3"><a href="#">&#8592; January</a></td>
+        <td></td>
+        <td id="next" colspan="3"><a href="#">March &#8594;</a></td>
+    </tr>
+    </tfoot>
+</table>
+<form method="post" action="http://www.randyconnolly.com/tests/process.php">
+    <fieldset>
+        <legend>Meeting Details</legend>
+        <div>
+            <label>
+                Client Name:
+                <input type="text" name="client" placeholder="Enter name" required>
+            </label>
+        </div>
+        <div>
+            <label>
+                First meeting?
+                <input type="checkbox" name="first">
+            </label>
+        </div>
+        <div>
+            <label>
+                Client type:
+                <label>
+                    <input type="radio" name="type" value="School" required>
+                    School
+                </label>
+                <label>
+                    <input type="radio" name="type" value="College" required>
+                    College
+                </label>
+                <label>
+                    <input type="radio" name="type" value="University" required>
+                    University
+                </label>
+            </label>
+        </div>
+        <div>
+            <label>
+                Meeting Date:
+                <input type="date" name="date" required>
+            </label>
+        </div>
+        <div>
+            <button type="submit">Submit</button>
+            <button type="reset">Reset</button>
+        </div>
+    </fieldset>
+</form>
+
+<script src="script/lab5-2.js"></script>
+
+</body>
+</html>
