@@ -1,0 +1,9 @@
+.animLoading {
+  display: flex;
+  align-items: flex-start;
+  justify-content: left;
+}
+
+.animLoading img {
+    max-width: 50%;
+}
