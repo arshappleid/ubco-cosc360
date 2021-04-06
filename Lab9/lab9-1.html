@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+    <script type="text/javascript" src="scripts/validate.js"></script>
+
+    <!-- Password checking script here!! -->
+    <script>
+      function checkPasswordMatch(e) {
+        let password = document.querySelector("#password");
+        let passwordCheck = document.querySelector("#password-check");
+
+        if (password.value !== passwordCheck.value) {
+          makeRed(password);
+          makeRed(passwordCheck);
+          if (!document.querySelector("p")) {
+            let errorMsg = document.createElement("p");
+            let text = document.createTextNode("Passwords need to match.");
+            errorMsg.appendChild(text);
+            errorMsg.style.color = "#AA0000";
+            document.body.appendChild(errorMsg);
+          }
+          return e.preventDefault();
+        }
+      }
+    </script>
+
+</head>
+
+<body>
+
+<form method="post" action="newuser.php" id="mainForm">
+    <label for="firstname">First Name:</label><br>
+    <input type="text" name="firstname" id="firstname" class="required">
+    <br>
+    <label for="lastname">Last Name:</label><br>
+    <input type="text" name="lastname" id="lastname" class="required">
+    <br>
+    <label for="username">Username:</label><br>
+    <input type="text" name="username" id="username" class="required">
+    <br>
+    <label for="email">email:</label><br>
+    <input type="email" name="email" id="email" class="required">
+    <br>
+    <label for="password">Password:</label><br>
+    <input type="password" name="password" id="password" class="required">
+    <br>
+    <label for="password-check">Re-enter Password:</label><br>
+    <input type="password" name="password-check" id="password-check" class="required">
+    <br><br>
+    <input type="submit" value="Create New User">
+</form>
+</body>

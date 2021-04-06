@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+    <script type="text/javascript" src="scripts/validate.js"></script>
+
+    <script>
+      function checkPasswordMatch(e) {
+        // let password = document.querySelector("#password");
+        // let passwordCheck = document.querySelector("#password-check");
+        //
+        // if (password.value !== passwordCheck.value) {
+        //   makeRed(password);
+        //   makeRed(passwordCheck);
+        //   if (!document.querySelector("p")) {
+        //     let errorMsg = document.createElement("p");
+        //     let text = document.createTextNode("Passwords need to match.");
+        //     errorMsg.appendChild(text);
+        //     errorMsg.style.color = "#AA0000";
+        //     document.body.appendChild(errorMsg);
+        //   }
+        //   return e.preventDefault();
+        // }
+      }
+    </script>
+</head>
+
+<body>
+
+<form method="get" action="finduser.php" id="mainForm">
+    Username:<br>
+    <input type="text" name="username" id="username" class="required">
+    <br>
+    <br><br>
+    <input type="submit" value="Find User">
+</form>
+</body>
